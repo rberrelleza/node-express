@@ -1,0 +1,12 @@
+name: hello-world
+image: ramiro/hello-world-express
+command:
+- bash
+workdir: /usr/src/app
+forward:
+- 9229:9229
+- 3000:3000
+resources:
+  limits:
+    cpu: "1"
+    memory: 2Gi
